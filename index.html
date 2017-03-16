@@ -13,13 +13,13 @@
     <div class="left_collumn">
     <form>
         <label for="hloubka">Hloubka:</label>
-        <input type="text" id="hloubka" placeholder="Hloubka" required>
+        <input type="number" min="0" max="1000" id="hloubka" placeholder="Hloubka" required>
         <label for="doba">Doba ponoru:</label>
-        <input type="number" id="doba" placeholder="Doba ponoru" required>
+        <input type="number" step="5" id="doba" min="0"max="10000" placeholder="Doba ponoru" required>
         <label for="poc_tlak">Počáteční tlak</label>
-        <input type="number" id="poc_tlak" placeholder="Počáteční tlak">
+        <input type="number" step="10" id="poc_tlak" min="0" max="400" placeholder="Počáteční tlak">
         <label for="kon_tlak">Koncový tlak</label>
-        <input type="number" id="kon_tlak" placeholder="Koncový tlak">
+        <input type="number" step="10" id="kon_tlak" min="0" max="400" placeholder="Koncový tlak">
         <label for="buddy">Buddy:</label>
         <input type="text" id="buddy" placeholder="Buddy">
         <label for="date">Datum ponoru:</label>

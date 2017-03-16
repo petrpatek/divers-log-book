@@ -13,11 +13,15 @@
     <section>
         <form>
             <label for="doba_plneni">Doba plnění:</label>
-            <input type="text" id="doba_plneni">
+            <input type="text" id="doba_plneni" required>
             <label for="datum">Datum plnění:</label>
-            <input type="date" id="datum">
+            <input type="date" id="datum" required>
             <label for="kompresor">Kompresor:</label>
-            <input type="radio" id="kompresor">
+            <select name="Kompresor" id="kompresor">
+                <option value="Benda MK100">Benda MK100</option>
+                <option value="Benda MK120">Benda MK120</option>
+
+            </select>
             <input type="submit" value="Přidat">
             <input type="reset" value="Resetovat">
         </form>
