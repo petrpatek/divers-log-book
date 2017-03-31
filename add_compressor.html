@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Přidat kompresor</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
-
+<main class="container">
 <nav>
-    <ul>
-    <li><a href="compressor.html">Zpět</a> </li>
+    <ul class="nav nav-tabs">
+    <li><a href="compressor.html"><span class="glyphicon glyphicon-chevron-left"></span>Zpět</a> </li>
     </ul>
 </nav>
-<header>
+
+<section class="col-md-6 col-md-offset-3">
+    <header>
     <h1>Přidat kompresor</h1>
-</header>
-<section>
-    <form>
+    </header>
+    <form class="form-group">
         <label for="znacka">Znacka:</label>
-        <input type="text" id="znacka" required>
+        <input class="form-control" type="text" id="znacka" required>
         <label for="model">Model:</label>
-        <input type="text" id="model" required>
-        <label for="servisovano">Poslední servis</label>
-        <input type="date" id="servisovano" required>
+        <input class="form-control" type="text" id="model" required>
+        <label for="servisovano" >Poslední servis</label>
+        <input class="form-control" type="date" id="servisovano" required>
         <label for="interval">Servisní interval</label>
-        <input type="text" id="interval" required>
+        <input class="form-control" type="text" id="interval" required>
         <label for="od_servisu">Hodin od servisu</label>
-        <input type="text" id="od_servisu" required>
-        <input type="submit" value="Uložit">
-        <input type="reset" value="Resetovat">
+        <input class="form-control" type="text" id="od_servisu" required>
+        <input class="btn btn-default" type="submit" value="Uložit">
+        <input class="btn btn-default" type="reset" value="Resetovat">
 
     </form>
 </section>
+</main>
 </body>
 </html>

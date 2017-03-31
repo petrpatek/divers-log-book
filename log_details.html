@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Log Details</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
-<main>
+<main class="container">
     <nav>
-        <ul>
-        <li><a href="log_book.html">Zpět</a> </li>
+        <ul class="nav nav-tabs">
+        <li> <a href="log_book.html"><span class="glyphicon glyphicon-chevron-left"></span> Zpět</a> </li>
         </ul>
 
     </nav>
-    <section>
+    <section class="col-md-6 col-md-offset-3">
         <h2>Detail ponoru</h2>
-        <p> Lokalita: Slapy</p>
+        <table class="table ">
+            <tr><td> Lokalita:</td><td> Slapy</td></tr>
         <!-- Mapa -->
-        <p>Hloubka: 30m</p>
-        <p>Čas: 50 min</p>
-        <p> Počáteční tlak: 200 bar</p>
-        <p> Konečný tlak: 50 bar</p>
-        <p>Buddy: Pepa</p>
-        <p>Datum: 21.12.2017</p>
-        <button type="button">Editovat</button>
-        <button type="button">Vložit nový</button>
+            <tr><td>Hloubka:</td> <td>30m</td></tr>
+            <tr> <td>Čas:</td> <td>50 min</td></tr>
+            <tr> <td> Počáteční tlak:</td> <td>200 bar</td></tr>
+            <tr> <td>Konečný tlak:</td> <td>50 bar</td></tr>
+        <tr><td>Buddy:</td> <td>Pepa</td></tr>
+            <tr><td>Datum: </td> <td>21.12.2017</td></tr>
+        </table>
+
+        <button type="button" class="btn btn-default">Editovat</button>
+        <button type="button" class="btn btn-default">Vložit nový</button>
     </section>
 </main>
 

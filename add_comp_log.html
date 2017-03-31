@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Přidat záznam o používání kompresoru</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
-<main>
+<main class="container">
+
 
     <nav>
-        <ul>
-        <li><a href="compressor.html">Zpět</a> </li></ul>
+        <ul class="nav nav-tabs">
+            <li><a href="compressor.html"><span class="glyphicon glyphicon-chevron-left"></span>Zpět</a> </li>
+        </ul>
     </nav>
-    <section>
-        <form>
+    <section class="col-md-6 col-md-offset-3">
+        <h2>Přidat plnění</h2>
+        <form class="form-group">
             <label for="doba_plneni">Doba plnění:</label>
-            <input type="text" id="doba_plneni" required>
+            <input class="form-control" type="text" id="doba_plneni" required>
             <label for="datum">Datum plnění:</label>
-            <input type="date" id="datum" required>
+            <input class="form-control" type="date" id="datum" required>
             <label for="kompresor">Kompresor:</label>
-            <select name="Kompresor" id="kompresor">
+            <select class="form-control" name="Kompresor" id="kompresor">
                 <option value="Benda MK100">Benda MK100</option>
                 <option value="Benda MK120">Benda MK120</option>
 
             </select>
-            <input type="submit" value="Přidat">
-            <input type="reset" value="Resetovat">
+            <input class="btn btn-default" type="submit" value="Přidat">
+            <input class="btn btn-default" type="reset" value="Resetovat">
         </form>
 
     </section>

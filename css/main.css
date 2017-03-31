@@ -1,12 +1,26 @@
 .login {
     background-color: black;
 }
+.bg {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 2px;
+}
 .login-text {
     display: inline-block;
+}
+@media screen and (max-width: 995px) {
+    .profil-aside {
+        display: none;
+    }
 }
 .text-right {
     display: inline-block;
 }
+.profil-aside {
+    padding-top: 120px;
+    padding-left: 7%;
+}
+
 .left_collumn {
     display: inline-block;
     border-right: 1px black;
